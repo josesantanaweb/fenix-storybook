@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'icons-regular';
+  src: url('/static/fonts/icons/icons-regular.eot?13601777');
+  src:
+    url('/static/fonts/icons/icons-regular.eot?13601777#iefix') format('embedded-opentype'),
+    url('/static/fonts/icons/icons-regular.woff2?13601777') format('woff2'),
+    url('/static/fonts/icons/icons-regular.woff?13601777') format('woff'),
+    url('/static/fonts/icons/icons-regular.ttf?13601777') format('truetype'),
+    url('/static/fonts/icons/icons-regular.svg?13601777#icons-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global */
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+
+  font-variant: normal;
+  text-transform: none;
+  font-size: 1em;
+  line-height: 1em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* icons-regular */
+.icon-regular::before {
+  font-family: 'icons-regular';
+}
+.icon-regular.icon-arrow-top-right:before { content: '\e800'; } /* '' */
+.icon-regular.icon-logout:before { content: '\e801'; } /* '' */
+.icon-regular.icon-settings:before { content: '\e802'; } /* '' */
+.icon-regular.icon-arrow-down-01-sharp:before { content: '\e803'; } /* '' */
+.icon-regular.icon-bridge:before { content: '\e804'; } /* '' */
+.icon-regular.icon-chart-high-low:before { content: '\e805'; } /* '' */
+.icon-regular.icon-hourglass:before { content: '\e806'; } /* '' */
+.icon-regular.icon-graph-up:before { content: '\e807'; } /* '' */
+.icon-regular.icon-park-outline-chart-stock:before { content: '\e808'; } /* '' */
+.icon-regular.icon-arrow-left-right-sharp:before { content: '\e809'; } /* '' */
+.icon-regular.icon-notification-01:before { content: '\e80a'; } /* '' */
+.icon-regular.icon-sun-03:before { content: '\e80b'; } /* '' */
+.icon-regular.icon-wallet-01:before { content: '\e80c'; } /* '' */
+.icon-regular.icon-checkmark-circle-02:before { content: '\e80d'; } /* '' */
+.icon-regular.icon-cancel-circle:before { content: '\e80e'; } /* '' */
+.icon-regular.icon-alert-circle:before { content: '\e80f'; } /* '' */
+.icon-regular.icon-fenix-rings:before { content: '\e810'; } /* '' */

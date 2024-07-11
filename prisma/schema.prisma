@@ -1,0 +1,99 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ring_distribution {
+  id          String   @id
+  created_at  DateTime @default(now())
+  updated_at  DateTime @default(now())
+  campaign_id String
+  pool_id     String
+  ring_points BigInt
+  gold_points BigInt
+  user_id     String
+  users       users    @relation(fields: [user_id], references: [id])
+}
+
+model users {
+  id                         String              @id
+  created_at                 DateTime            @default(now())
+  accumulated_rings_points   BigInt              @default(0)
+  unclaimed_rings_points     BigInt              @default(0)
+  given_blast_poins          Int                 @default(0)
+  pending_blast_points       Int                 @default(0)
+  given_blast_gold_points    Decimal             @default(0)
+  pending_blast_gold_points  Int                 @default(0)
+  updated_at                 DateTime            @default(now())
+  without_bonus_rings_points BigInt              @default(0)
+  ring_bonus                 ring_bonus[]
+  ring_distribution          ring_distribution[]
+  rings_extra_data           rings_extra_data?
+  action_event               action_event[]
+  referrals_events           referrals_events[]
+}
+
+model rings_extra_data {
+  id                    String   @id @default(uuid())
+  created_at            DateTime @default(now())
+  updated_at            DateTime @default(now())
+  user_id               String   @unique
+  gold_qualifying_rings Decimal  @default(0)
+  potential_gold_reward Decimal  @default(0)
+  users                 users    @relation(fields: [user_id], references: [id])
+}
+
+model ring_batch_distribution {
+  id         String   @id
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+  batch_data Json
+  is_sent    Boolean  @default(false)
+  pool_id    String
+  batch_id   String?
+}
+
+// cambiar a action event?
+enum EventType {
+  ADD_LIQUIDITY
+  SWAP
+}
+
+model action_event {
+  id         String    @id
+  created_at DateTime  @default(now())
+  user_id    String
+  users      users     @relation(fields: [user_id], references: [id])
+  value      Decimal
+  event_type EventType
+}
+
+model ring_bonus {
+  id          String    @id @default(uuid())
+  created_at  DateTime  @default(now())
+  updated_at  DateTime  @default(now())
+  user_id     String
+  bonus_type  BonusType
+  ring_points BigInt
+  gold_points BigInt
+  users       users     @relation(fields: [user_id], references: [id])
+  description String?   @db.Text
+}
+
+model referrals_events {
+  id         String   @id
+  user_id    String
+  event_name String
+  created_at DateTime @default(now())
+  rings      Decimal
+  users      users    @relation(fields: [user_id], references: [id])
+}
+
+enum BonusType {
+  NFT
+  CAMPAIGN
+}

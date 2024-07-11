@@ -1,0 +1,2343 @@
+/************* Boxes ***********/
+
+.process-box {
+  @apply relative flex flex-col items-center justify-center p-4 px-3 rounded-lg bg-shark-400 bg-opacity-40
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:top-[-16px]
+  before:left-[15px]
+  before:rotate-[89deg]
+  before:border-solid
+  before:border-t-[30px]
+  before:border-r-[30px]
+  before:border-b-[30px]
+  before:border-[transparent_transparent_#111315]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:bottom-[-16px]
+  after:right-[15px]
+  after:rotate-[-91deg]
+  after:border-solid
+  after:border-t-[30px]
+  after:border-r-[30px]
+  after:border-b-[30px]
+  after:border-[transparent_transparent_#111315];
+}
+
+.point-box {
+  @apply relative flex flex-col items-center justify-center p-4 px-3 rounded-lg bg-shark-400 bg-opacity-40
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:top-[-16px]
+  before:left-[15px]
+  before:rotate-[89deg]
+  before:border-solid
+  before:border-t-[30px]
+  before:border-r-[30px]
+  before:border-b-[30px]
+  before:border-[transparent_transparent_#121315]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:bottom-[-16px]
+  after:right-[15px]
+  after:rotate-[-91deg]
+  after:border-solid
+  after:border-t-[30px]
+  after:border-r-[30px]
+  after:border-b-[30px]
+  after:border-[transparent_transparent_#121315];
+}
+
+.point-summary-box {
+  @apply relative flex flex-col items-center justify-center p-5 rounded-lg bg-shark-400 bg-opacity-40 w-full min-h-[137px]
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:top-[-16px]
+  before:left-[15px]
+  before:rotate-[89deg]
+  before:border-solid
+  before:border-t-[30px]
+  before:border-r-[30px]
+  before:border-b-[30px]
+  before:border-[transparent_transparent_#1a1d21]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:bottom-[-16px]
+  after:right-[15px]
+  after:rotate-[-91deg]
+  after:border-solid
+  after:border-t-[30px]
+  after:border-r-[30px]
+  after:border-b-[30px]
+  after:border-[transparent_transparent_#1a1d21];
+}
+
+.box {
+  @apply relative bg-shark-400 bg-opacity-40  rounded-xl pl-4 xl:pl-5 pr-4 xl:pr-3 py-3
+  w-full
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:bottom-[0px]
+  before:left-[-1px]
+  before:rotate-[-1deg]
+  before:border-solid
+  before:border-t-[20px]
+  before:border-r-[20px]
+  before:border-b-[20px]
+  before:border-[transparent_transparent_#1b1e21]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:top-[-1px]
+  after:right-[-1px]
+  after:rotate-[181deg]
+  after:border-solid
+  after:border-t-[20px]
+  after:border-r-[20px]
+  after:border-b-[20px]
+  after:border-[transparent_transparent_#1b1f22];
+}
+
+.address-check-box {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl pl-4 xl:pl-5 pr-4 xl:pr-3 py-3
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:bottom-[0px]
+  before:left-[-1px]
+  before:rotate-[-1deg]
+  before:border-solid
+  before:border-t-[20px]
+  before:border-r-[20px]
+  before:border-b-[20px]
+  before:border-[transparent_transparent_#111316]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:top-[-1px]
+  after:right-[-1px]
+  after:rotate-[181deg]
+  after:border-solid
+  after:border-t-[20px]
+  after:border-r-[20px]
+  after:border-b-[20px]
+  after:border-[transparent_transparent_#111316];
+}
+
+.total-migrated-box {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl pl-4 xl:pl-5 pr-4 xl:pr-3 py-3
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:bottom-[0px]
+  before:left-[-1px]
+  before:rotate-[-1deg]
+  before:border-solid
+  before:border-t-[20px]
+  before:border-r-[20px]
+  before:border-b-[20px]
+  before:border-[transparent_transparent_#111316]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:top-[-1px]
+  after:right-[-1px]
+  after:rotate-[181deg]
+  after:border-solid
+  after:border-t-[20px]
+  after:border-r-[20px]
+  after:border-b-[20px]
+  after:border-[transparent_transparent_#251613];
+}
+
+.search-box {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl pl-4 xl:pl-5 pr-4 xl:pr-3 py-3 flex items-center max-h-[45px];
+}
+
+.filter-lock-box {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl pl-4 xl:pl-5 pr-4 xl:pr-3 py-3
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:bottom-[0px]
+  before:left-[-1px]
+  before:rotate-[-1deg]
+  before:border-solid
+  before:border-t-[20px]
+  before:border-r-[20px]
+  before:border-b-[20px]
+  before:border-[transparent_transparent_#1e1f20]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:top-[-1px]
+  after:right-[-1px]
+  after:rotate-[181deg]
+  after:border-solid
+  after:border-t-[20px]
+  after:border-r-[20px]
+  after:border-b-[20px]
+  after:border-[transparent_transparent_#1e1f20];
+}
+
+.pagination-mobile-box {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl pl-4 xl:pl-5 pr-4 xl:pr-3 py-3
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:bottom-[0px]
+  before:left-[-1px]
+  before:rotate-[-1deg]
+  before:border-solid
+  before:border-t-[1px]
+  before:border-r-[1px]
+  before:border-b-[1px]
+  before:border-[transparent_transparent_#FF0000]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:top-[-1px]
+  after:right-[-1px]
+  after:rotate-[181deg]
+  after:border-solid
+  after:border-t-[8px]
+  after:border-r-[8px]
+  after:border-b-[8px]
+  after:border-[transparent_transparent_#FF0000];
+}
+
+.filter-orders-box {
+  @apply relative bg-shark-400 bg-opacity-40 rounded-xl pl-4 xl:pl-5 pr-4 xl:pr-3 py-3
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:bottom-[0px]
+  before:left-[-1px]
+  before:rotate-[-1deg]
+  before:border-solid
+  before:border-t-[20px]
+  before:border-r-[20px]
+  before:border-b-[20px]
+  before:border-[transparent_transparent_#1a1d21]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:top-[-1px]
+  after:right-[-1px]
+  after:rotate-[181deg]
+  after:border-solid
+  after:border-t-[20px]
+  after:border-r-[20px]
+  after:border-b-[20px]
+  after:border-[transparent_transparent_#1a1d21];
+}
+
+/* Background for header */
+
+.header-box-landing {
+
+  
+  @apply relative
+  w-full
+  flex-shrink-0
+  px-4
+  min-h-[41px]
+  min-w-[384px]
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/header/header-landing.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/header/header-landing.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  
+}
+
+/* .rectangulo {
+  @apply
+  w-[500px]
+  h-[70px]
+  bg-white
+  relative
+  rounded-tr-2xl
+  rounded-bl-2xl
+  rounded-tl-[35px]
+  rounded-br-[35px]
+
+  before:content-[""]
+  before:absolute
+  before:bg-black
+  before:w-[50px]
+  before:h-[50px]
+  before:top-[-30px]
+  before:left-[-27px]
+  before:rounded-tl-2xl
+  before:rotate-[55deg]
+
+  after:content-[""]
+  after:absolute
+  after:bg-black
+  after:w-[50px]
+  after:h-[50px]
+  after:bottom-[-30px]
+  after:right-[-27px]
+  after:rounded-br-2xl
+  after:rotate-[55deg]
+
+  ;
+} */
+
+.header-mobile-box {
+  @apply relative h-[95px] w-full
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/header/header-mobile.svg")]
+  before:bg-no-repeat
+  before:h-full
+  before:bg-cover
+  before:w-[calc(100%-310px)]
+  before:top-0
+  before:left-0
+  before:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/header/header-mobile.svg")]
+  after:bg-no-repeat
+  after:bg-right
+  after:h-full
+  after:bg-cover
+  after:w-[310px]
+  after:top-0
+  after:right-0
+  after:block;
+}
+
+/* Background for panel trade */
+.box-panel-trade {
+  @apply relative
+  w-full
+  flex-shrink-0
+  rounded-2xl
+  xl:w-[667px]
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  py-12
+  px-8
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/trade/trade-panel.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:z-[-1]
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/trade/trade-panel.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:z-[-1]
+  after:xl:block;
+}
+/* .box-panel-trade-chart {
+  @apply relative
+  w-full
+  flex-shrink-0
+  xl:rounded-2xl
+  rounded-t-2xl
+  xl:w-[667px]
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  py-12
+  px-8
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/trade/trade-panel.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:z-[-1]
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/trade/trade-panel.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:z-[-1]
+  after:xl:block;
+} */
+
+.box-navigation-trade {
+  @apply relative
+  flex
+  mb-4
+  w-full
+  flex-col
+  xl:flex-row
+  items-start
+  xl:items-center
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  rounded-lg
+  px-5
+  pt-6
+  pb-4
+  justify-between
+  -mt-[30px]
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/trade/trade-navigation.svg")]
+  before:bg-no-repeat
+  before:h-full
+  before:bg-cover
+  before:w-[calc(100%-400px)]
+  before:top-0
+  before:left-0
+  before:hidden
+  before:z-[-1]
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/trade/trade-navigation.svg")]
+  after:bg-no-repeat
+  after:bg-right
+  after:h-full
+  after:bg-cover
+  after:w-[400px]
+  after:bottom-0
+  after:right-0
+  after:hidden
+  after:z-[-1]
+  after:xl:block;
+}
+
+/* Background for exchange box of trade panel */
+.exchange-box-x1 {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl px-4 xl:px-6 py-6
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:top-[-15px]
+  before:left-[15px]
+  before:rotate-[89deg]
+  before:border-solid
+  before:border-t-[30px]
+  before:border-r-[30px]
+  before:border-b-[30px]
+  before:border-[transparent_transparent_#1a1d21]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:bottom-[-14px]
+  after:right-[12px]
+  after:rotate-[-91deg]
+  after:border-solid
+  after:border-t-[25px]
+  after:border-r-[25px]
+  after:border-b-[25px]
+  after:border-[transparent_transparent_#1a1d21];
+}
+
+.box-invert {
+  @apply relative
+  
+  xl:w-[312px]
+  flex-shrink-0
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/notifications/notification.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:z-40
+  before:top-0
+  before:left-0
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/notifications/notification.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:z-40
+  after:bottom-0
+  after:left-0;
+}
+
+.mini-box-vote {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl pl-4 xl:pl-5 pr-4 xl:pr-3 py-3
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:bottom-[0px]
+  before:left-[-1px]
+  before:rotate-[-1deg]
+  before:border-solid
+  before:border-t-[20px]
+  before:border-r-[20px]
+  before:border-b-[20px]
+  before:border-[transparent_transparent_#1b1e22]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:top-[-1px]
+  after:right-[-1px]
+  after:rotate-[181deg]
+  after:border-solid
+  after:border-t-[20px]
+  after:border-r-[20px]
+  after:border-b-[20px]
+  after:border-[transparent_transparent_#1f1f20];
+}
+
+/* Background forvote box */
+.vote-box {
+  @apply relative
+  rounded-2xl
+  flex-shrink-0
+  max-w-[348px]
+  max-h-[118px]
+  py-8
+  2xl:py-6
+  px-8
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/vote/vote-pool.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/vote/vote-pool.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0;
+}
+
+/* Background for exchange box of trade panel */
+.exchange-box-x2 {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl px-4 xl:px-6 py-6
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:top-[-14px]
+  before:right-[12px]
+  before:rotate-[274deg]
+  before:border-solid
+  before:border-t-[25px]
+  before:border-l-[25px]
+  before:border-b-[25px]
+  before:border-[transparent_transparent_#1a1d21]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:bottom-[0px]
+  after:left-[-1px]
+  after:rotate-[-362deg]
+  after:border-solid
+  after:border-t-[30px]
+  after:border-r-[30px]
+  after:border-b-[30px]
+  after:border-[transparent_transparent_#1a1d21];
+}
+
+/* Background order item */
+.order-item-box {
+  @apply relative w-full rounded-xl bg-shark-400 bg-opacity-40 p-6
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:bottom-[0px]
+  before:left-[-1px]
+  before:rotate-[-1deg]
+  before:border-solid
+  before:border-t-[20px]
+  before:border-r-[20px]
+  before:border-b-[20px]
+  before:border-[transparent_transparent_#1a1d21]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:top-[-1px]
+  after:right-[-1px]
+  after:rotate-[181deg]
+  after:border-solid
+  after:border-t-[20px]
+  after:border-r-[20px]
+  after:border-b-[20px]
+  after:border-[transparent_transparent_#1a1d21];
+}
+
+/* Background for steps */
+.steps-box {
+  @apply relative
+  w-full
+  rounded-2xl
+  2xl:max-w-[615px]
+  z-[1]
+  flex-shrink-0
+  /* 2xl:w-[615px] */
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  py-8
+  2xl:py-6
+  px-8
+  min-h-[270px]
+  xl:max-h-[270px]
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/steps/step.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/steps/step.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+
+.steps-box-dashboard {
+  @apply relative
+  w-full
+  rounded-2xl
+  2xl:max-w-[615px]
+  flex-shrink-0
+  /* 2xl:w-[615px] */
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  py-8
+  2xl:py-6
+  px-8
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/steps/step.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/steps/step.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+
+.steps-box-dashboard {
+  @apply relative
+  w-full
+  rounded-2xl
+  /* 2xl:max-w-[615px] */
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  py-8
+  px-8
+  /* xl:h-[440px] */
+  2xl:h-[500px]
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/steps/step.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/steps/step.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+
+/* Background for main box */
+.main-box {
+  @apply relative
+  w-full
+  rounded-2xl
+  2xl:max-w-[1150px]
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  py-6
+  px-8
+  2xl:px-12
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/main/main.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/main/main.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+
+.lock-box {
+  @apply relative
+  w-full
+  rounded-2xl
+  /* xl:max-w-[1170px] */
+  xl:min-w-[1170px]
+  /* xl:min-w-[1170px] */
+  xl:max-w-[1170px]
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  xl:py-20
+  xl:px-20
+  px-8
+  py-12
+  z-10
+  xl:max-h-[750px]
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/lock/lock.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/lock/lock.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+
+/* Background for veFNXIDO boxes */
+.offering-box {
+  @apply relative
+  w-full
+  rounded-2xl
+  2xl:max-w-[480px]
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  2xl:bg-transparent
+  2xl:bg-opacity-100
+  py-8
+  2xl:py-12
+  px-8
+  2xl:px-12
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/veFNXIDO/offering.svg")]
+  before:bg-no-repeat
+  before:h-[40%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:2xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/veFNXIDO/offering.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[60%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:2xl:block;
+}
+
+.detail-box {
+  @apply relative
+  w-full
+  rounded-2xl
+  2xl:max-w-[615px]
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  2xl:bg-transparent
+  2xl:bg-opacity-100
+  py-8
+  2xl:py-12
+  px-8
+  2xl:px-12
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/veFNXIDO/detail.svg")]
+  before:bg-no-repeat
+  before:h-[40%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:2xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/veFNXIDO/detail.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[60%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:2xl:block;
+}
+
+/* Background for welcome box */
+.welcome-box {
+  @apply items-center
+  relative
+  w-full
+  rounded-2xl
+  2xl:max-w-[800px]
+  2xl:min-h-[450px]
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  2xl:bg-transparent
+  2xl:bg-opacity-100
+  py-8
+  2xl:py-14
+  px-8
+  2xl:px-12
+  hidden
+  2xl:flex
+
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/modals/welcome.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:2xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/modals/welcome.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:2xl:block;
+}
+
+/* Background for notification */
+.box-notification {
+  @apply relative
+   xl:flex
+  w-full
+  h-full
+  rounded-2xl
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  xl:max-w-[661px]
+  max-h-[88px]
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/notification-lock/box-notification.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/notification-lock/box-notification.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+  /* @apply relative 
+  bg-shark-400 bg-opacity-40 w-full rounded-xl px-4 xl:px-6 py-6
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:top-[-15px]
+  before:left-[15px]
+  before:rotate-[89deg]
+  before:border-solid
+  before:border-t-[30px]
+  before:border-r-[31px]
+  before:border-b-[31px]
+  before:border-[transparent_transparent_#201914]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:bottom-[-14px]
+  after:right-[12px]
+  after:rotate-[-91deg]
+  after:border-solid
+  after:border-t-[25px]
+  after:border-r-[25px]
+  after:border-b-[25px]
+  after:border-[transparent_transparent_#131517]; */
+}
+
+.exchange-box-info {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl px-4 xl:px-6 py-6
+
+  before:hidden
+  2xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:top-[-15px]
+  before:left-[15px]
+  before:rotate-[89deg]
+  before:border-solid
+  before:border-t-[20px]
+  before:border-r-[20px]
+  before:border-b-[30px]
+  before:border-[transparent_transparent_#1a1d21]
+
+  after:hidden
+  2xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:bottom-[-14px]
+  after:right-[12px]
+  after:rotate-[-91deg]
+  after:border-solid
+  after:border-t-[25px]
+  after:border-r-[25px]
+  after:border-b-[25px]
+  after:border-[transparent_transparent_#1a1d21];
+}
+
+/* Background for common modals */
+.common-modal {
+  @apply relative
+  flex
+  flex-col
+  items-center
+  justify-center
+  min-w-[100vw]
+  rounded-2xl
+  z-[100]
+  sm:min-w-[580px]
+  sm:max-w-[580px]
+  sm:min-h-[470px]
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  backdrop-blur-[15px]
+  xl:bg-transparent
+  xl:bg-opacity-100
+  py-5
+  xl:py-8
+  px-5
+  xl:px-8
+  
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/modals/modal.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/modals/modal.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:pointer-events-none
+  after:z-[-1]
+  after:xl:block;
+}
+.loading-data-modal {
+  @apply relative
+  flex
+  flex-col
+  items-center
+  min-w-[100vw]
+  rounded-2xl
+  z-[100]
+  sm:min-w-[580px]
+  sm:max-w-[580px]
+  min-h-[470px]
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  backdrop-blur-[15px]
+  xl:bg-transparent
+  xl:bg-opacity-100
+  py-5
+  xl:py-8
+  px-5
+  xl:px-8
+  
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/modals/modal.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/modals/modal.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:pointer-events-none
+  after:z-[-1]
+  after:xl:block;
+}
+
+.common-landing {
+  @apply relative
+  flex
+  flex-col
+  items-center
+  justify-center
+  w-[318px]
+  h-[302px]
+  rounded-2xl
+  sm:w-[380px]
+  sm:min-h-[350px]
+  flex-shrink-0
+  py-5
+  2xl:py-8
+  px-5
+  2xl:px-8
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/landing/backCardLanding.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:2xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/landing/backCardLanding.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:2xl:block;
+}
+
+.common-landing-hover {
+  @apply relative
+  flex
+  flex-col
+  items-center
+  justify-center
+  w-[318px]
+  h-[302px]
+  rounded-2xl
+  sm:w-[380px]
+  sm:min-h-[350px]
+  flex-shrink-0
+  py-5
+  2xl:py-8
+  px-5
+  2xl:px-8
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/landing/backCardLandingHover.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:2xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/landing/backCardLandingHover.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:2xl:block;
+}
+
+.box-dashboard {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl pl-4 xl:pl-5 pr-4 xl:pr-3 py-3
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:bottom-[0px]
+  before:left-[-1px]
+  before:rotate-[-1deg]
+  before:border-solid
+  before:border-t-[20px]
+  before:border-r-[20px]
+  before:border-b-[20px]
+  before:border-[transparent_transparent_#1a1d21]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:top-[-1px]
+  after:right-[-1px]
+  after:rotate-[181deg]
+  after:border-solid
+  after:border-t-[20px]
+  after:border-r-[20px]
+  after:border-b-[20px]
+  after:border-[transparent_transparent_#1a1d21]
+  after:pointer-events-none;
+}
+/* Background for dashboard box */
+.dashboard-box {
+  @apply relative
+  w-full
+  rounded-2xl
+  2xl:max-w-[1800px]
+  flex
+  flex-col
+  min-h-[470px]
+  bg-shark-400
+  bg-opacity-40
+  2xl:bg-transparent
+  2xl:bg-opacity-100
+  py-6
+  px-4
+  2xl:py-12
+  2xl:px-6
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/dashboard/dashboard.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:2xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/dashboard/dashboard.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:2xl:block
+  after:pointer-events-none;
+}
+
+.box-strategies {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl px-4 xl:px-6 py-2
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:top-[-15px]
+  before:left-[15px]
+  before:rotate-[89deg]
+  before:border-solid
+  before:border-t-[30px]
+  before:border-r-[30px]
+  before:border-b-[30px]
+  before:border-[transparent_transparent_#202328]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:bottom-[-14px]
+  after:right-[12px]
+  after:rotate-[-91deg]
+  after:border-solid
+  after:border-t-[25px]
+  after:border-r-[25px]
+  after:border-b-[25px]
+  after:border-[transparent_transparent_#202328];
+}
+
+.article-box {
+  @apply relative
+  opacity-70
+  hover:opacity-100
+  bg-shark-400
+  bg-opacity-40
+  backdrop-blur-md
+  flex
+  flex-col-reverse
+  xl:flex-row
+  xl:bg-none
+  xl:items-center
+  gap-5
+  p-6
+  transition
+  rounded-lg
+  hover:shadow-[0px_4px_30px_0px_rgba(246,_119,_2,_0.50)]
+  xl:max-w-[901px]
+  border
+  border-shark-100
+  xl:border-0
+  max-xl:w-1/3
+  max-xl:justify-between
+  max-lg:w-full
+  xl:before:content-['']
+  xl:before:absolute
+  xl:before:left-0
+  xl:before:bottom-0
+  xl:before:bg-[url(/static/images/landing/articles/box.svg)]
+  xl:before:w-1/2
+  xl:before:h-[207px]
+  xl:before:bg-no-repeat
+  xl:after:content-['']
+  xl:after:absolute
+  xl:after:right-0
+  xl:after:bottom-0
+  xl:after:bg-[url(/static/images/landing/articles/box.svg)]
+  xl:after:w-1/2
+  xl:after:h-[207px]
+  xl:after:bg-right
+  xl:after:bg-no-repeat;
+}
+
+.article-big-box {
+  @apply relative
+  transition
+  bg-opacity-40
+
+  p-5
+  xl:p-10
+  rounded-lg
+bg-shark-400
+opacity-70
+  hover:opacity-100
+  backdrop-blur-md
+  hover:shadow-[0px_4px_30px_0px_rgba(246,_119,_2,_0.50)]
+  xl:max-w-[607px]
+  border
+  border-shark-100
+  xl:border-0
+  xl:before:content-['']
+  xl:before:absolute
+  xl:before:right-0
+  xl:before:top-0
+  xl:before:bg-[url(/static/images/landing/articles/big-box.svg)]
+  xl:before:w-full
+  xl:before:h-1/2
+  xl:before:bg-no-repeat
+  xl:before:bg-cover
+  xl:after:content-['']
+  xl:after:absolute
+  xl:after:right-0
+  xl:after:bottom-0
+  xl:after:bg-[url(/static/images/landing/articles/big-box.svg)]
+  xl:after:w-full
+  xl:after:h-1/2
+  xl:after:bg-bottom
+  xl:after:bg-no-repeat
+  xl:after:bg-cover;
+}
+
+.module {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to left, red, rgba(0, 0, 0, 0)) 1;
+  border-radius: 24px;
+}
+
+.main-header-box {
+  @apply relative
+
+  before:content-['']
+  before:absolute
+  before:left-0
+  before:bottom-0
+  before:bg-[url(/static/images/landing/main/box.svg)]
+  before:w-1/2
+  before:h-[123px]
+  before:-z-10
+
+  after:content-['']
+  after:absolute
+  after:right-0
+  after:bottom-0
+  after:bg-[url(/static/images/landing/main/box.svg)]
+  after:w-1/2
+  after:h-[123px]
+  after:bg-right
+  after:-z-10;
+}
+.info-box {
+  @apply relative px-5 py-3
+  2xl:bg-[url("/static/images/landing/main/info-box.svg")]
+  bg-[url("/static/images/landing/main/info-box.svg")]
+  max-2xl:bg-[url("/static/images/landing/main/tablet-info-box.svg")]
+  bg-no-repeat
+  bg-cover
+  2xl:w-[1135px]
+  2xl:h-[133px]
+  max-2xl:w-[532px]
+  max-2xl:h-[420px];
+}
+
+.mobile-info-box {
+  @apply relative px-5 py-3
+  bg-[url("/static/images/landing/main/mobile-info-box.svg")]
+  max-sm:bg-[url("/static/images/landing/main/mobile-info-box2.svg")]
+  max-xs:bg-[url("/static/images/landing/main/mobile-info-box3.svg")]
+  max-xxs:bg-[url("/static/images/landing/main/mobile-info-box4.svg")]
+  bg-no-repeat
+  bg-cover
+  w-[481px]
+  max-sm:w-[401px]
+  max-xs:w-[307px]
+  max-xxs:w-[229px]
+  h-[504px]
+
+  /* before:content-['']
+  before:absolute
+  before:left-0
+  before:top-0
+  before:bg-[url(/static/images/landing/main/mobile-info-box.svg)]
+  before:w-[100%]
+  before:h-1/2
+  before:-z-10
+  before:bg-no-repeat
+  before:bg-cover
+
+  after:content-['']
+  after:absolute
+  after:left-0
+  after:bottom-0
+  after:bg-[url(/static/images/landing/main/mobile-info-box.svg)]
+  after:w-[100%]
+  after:h-1/2
+  after:bg-bottom
+  after:bg-no-repeat
+  after:bg-cover
+  after:-z-10 */;
+}
+
+.landing-info-box {
+  @apply relative h-[400px] md:h-[268px] max-md:max-w-[350px]
+
+  before:content-['']
+  before:absolute
+  before:left-0
+  before:top-0
+  before:bottom-0
+  before:bg-[url(/static/images/landing/info/box-border-mobile.svg)]
+  md:before:bg-[url(/static/images/landing/info/box-border.svg)]
+  before:w-1/2
+  md:before:h-[268px]
+  before:-z-10
+  max-md:before:bg-cover
+
+  after:content-['']
+  after:absolute
+  after:right-0
+  after:top-0
+  after:bottom-0
+  after:bg-[url(/static/images/landing/info/box-border-mobile.svg)]
+  md:after:bg-[url(/static/images/landing/info/box-border.svg)]
+  after:w-1/2
+  md:after:h-[268px]
+  after:bg-right
+  after:-z-10
+  max-md:after:bg-cover;
+}
+
+.landing-info-box-big {
+  @apply relative  h-auto
+
+  before:content-['']
+  before:absolute
+  before:left-0
+  before:top-0
+  before:bottom-0
+  before:bg-[url(/static/images/landing/info/box-border-mobile.svg)]
+  md:before:bg-[url(/static/images/landing/info/box-border.svg)]
+  before:w-1/2
+  md:before:h-[268px]
+  before:-z-10
+  max-md:before:bg-cover
+
+  after:content-['']
+  after:absolute
+  after:right-0
+  after:top-0
+  after:bottom-0
+  after:bg-[url(/static/images/landing/info/box-border-mobile.svg)]
+  md:after:bg-[url(/static/images/landing/info/box-border.svg)]
+  after:w-1/2
+  md:after:h-[268px]
+  after:bg-right
+  after:-z-10
+  max-md:after:bg-cover;
+}
+
+.footer-box {
+  @apply relative
+  before:bg-[url("/static/images/footer/footer-mobile.svg")]
+  before:h-[50%]
+  before:w-full
+  before:md:bg-[url("/static/images/footer/footer.svg")]
+  before:md:h-[80%]
+  before:xl:w-[510px]
+  before:md:w-[690px]
+  before:absolute
+  before:bg-no-repeat
+  before:bg-cover
+  before:left-0
+
+  after:md:bg-[url("/static/images/footer/footer.svg")]
+  after:bg-[url("/static/images/footer/footer-mobile.svg")]
+  after:w-full
+  after:h-[50%]
+  after:bg-bottom
+  after:xl:w-[calc(100%-510px)]
+  after:md:w-[calc(100%-690px)]
+  after:md:h-[80%]
+  after:right-0
+  after:md:top-0
+  after:bottom-0
+  after:md:bg-right
+  after:bg-cover
+  after:absolute
+  after:bg-no-repeat;
+}
+
+.blast-banner {
+  @apply relative flex w-full h-[80px] max-md:min-h-[124px] max-lg:h-auto max-lg:py-3 justify-between max-lg:justify-center items-center max-lg:items-start px-10 max-lg:gap-2
+  before:bg-[url("/static/images/blast-banner.svg")]
+  before:w-[50%]
+  before:h-full
+  before:absolute
+  before:bg-no-repeat
+  before:bg-cover
+  before:left-0
+
+  after:bg-[url("/static/images/blast-banner.svg")]
+  after:h-full
+  after:w-[50%]
+  after:bg-right
+  after:right-0
+  after:md:top-0
+  after:bottom-0
+  after:md:bg-right
+  after:bg-cover
+  after:absolute
+  after:bg-no-repeat;
+}
+.blast-3x-banner {
+  @apply relative flex w-full h-[80px] max-md:min-h-[124px] max-lg:h-auto max-lg:py-3 justify-between max-lg:justify-start items-center max-lg:items-start px-10 max-xs:px-5 max-lg:gap-2
+  before:bg-[url("/static/images/blast-banner.svg")]
+  before:w-[50%]
+  before:h-full
+  before:absolute
+  before:bg-no-repeat
+  before:bg-cover
+  before:left-0
+
+  after:bg-[url("/static/images/blast-banner.svg")]
+  after:h-full
+  after:w-[50%]
+  after:bg-right
+  after:right-0
+  after:md:top-0
+  after:bottom-0
+  after:md:bg-right
+  after:bg-cover
+  after:absolute
+  after:bg-no-repeat;
+}
+
+.your-point-box {
+  @apply relative
+  w-full
+  p-5
+  xl:py-14
+  xl:px-10
+  mb-10
+  bg-shark-400
+  xl:bg-transparent
+  bg-opacity-40
+  rounded-lg
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/points/point-summary.svg")]
+  before:bg-no-repeat
+  before:h-full
+  before:bg-cover
+  before:w-1/2
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/points/point-summary.svg")]
+  after:bg-no-repeat
+  after:bg-right
+  after:h-full
+  after:bg-cover
+  after:w-1/2
+  after:top-0
+  after:right-0
+  after:hidden
+  after:xl:block;
+}
+
+.your-provide-box {
+  @apply w-full
+  xl:h-[120px]
+  p-5
+  xl:py-14
+  xl:px-10
+  mb-10
+  bg-shark-400
+  xl:bg-transparent
+  bg-opacity-40
+  rounded-lg
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/points/provide.svg")]
+  before:bg-no-repeat
+  before:h-full
+  before:bg-cover
+  before:w-1/2
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/points/provide.svg")]
+  after:bg-no-repeat
+  after:bg-right
+  after:h-full
+  after:bg-cover
+  after:w-1/2
+  after:top-0
+  after:right-0
+  after:hidden
+  after:xl:block;
+}
+
+.box-pagination {
+  @apply relative bg-shark-400 bg-opacity-40 w-full rounded-xl pl-4 xl:pl-5 pr-4 xl:pr-3 py-3
+
+  before:hidden
+  xl:before:block
+  before:absolute
+  before:w-0
+  before:h-0
+  before:bottom-[0px]
+  before:left-[-1px]
+  before:rotate-[-1deg]
+  before:border-solid
+  before:border-t-[20px]
+  before:border-r-[20px]
+  before:border-b-[20px]
+  before:border-[transparent_transparent_#121517]
+
+  after:hidden
+  xl:after:block
+  after:absolute
+  after:w-0
+  after:h-0
+  after:top-[-1px]
+  after:right-[-1px]
+  after:rotate-[181deg]
+  after:border-solid
+  after:border-t-[20px]
+  after:border-r-[20px]
+  after:border-b-[20px]
+  after:border-[transparent_transparent_#111315];
+}
+
+.box-reward-medium {
+  @apply relative
+  w-full
+  rounded-xl
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+
+  min-h-[89px]
+  xl:max-h-[89px]
+  /* 2xl:max-w-[248px]
+  xl:max-w-[180px] */
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/rewards/box-reward.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/rewards/box-reward.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+.box-referrals-short {
+  @apply relative
+  w-full
+  rounded-xl
+  flex-shrink-0
+  /* 2xl:w-[615px] */
+bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  xl:max-h-[75px]
+  min-h-[75px]
+  max-w-[1127px]
+  py-4
+  px-6
+  md:px-8
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/referrals/box-referrals-short.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/referrals/box-referrals-short.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+
+.box-vote-medium {
+  @apply relative
+  w-full
+  rounded-xl
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  min-h-[89px]
+  xl:max-h-[89px]
+  /* 2xl:min-w-[180px] */
+  /* 2xl:max-w-[161px]
+  xl:max-w-[110px] */
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/vote/box-medium.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+
+  after:bg-[url("/static/images/components/box/vote/box-medium.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+.box-referrals-short-invert{
+
+ @apply relative
+  w-full
+  rounded-xl
+  flex-shrink-0
+  /* 2xl:w-[615px] */
+bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  max-h-[75px]
+  min-h-[75px]
+  max-w-[1127px]
+  py-4
+  px-6
+  md:px-8
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/referrals/box-referrals-short-invert.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/referrals/box-referrals-short-invert.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+
+.box-vote-short {
+  @apply relative
+  w-full
+  rounded-xl
+  flex-shrink-0
+  bg-shark-400
+  bg-opacity-40
+  min-w-[120px]
+  xl:bg-transparent
+  xl:bg-opacity-100
+  /* xl:min-h-[36px] */
+  xl:max-h-[45px]
+  /* xl:max-w-[160px] */
+  2xl:min-h-[42px]
+  /* 2xl:max-w-[160px] */
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/vote/box-short.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/vote/box-short.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+
+
+
+.box-referrals-medium {
+  @apply relative
+  w-full
+  rounded-xl
+  flex-shrink-0
+  /* 2xl:w-[615px] */
+bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  xl:max-h-[75px]
+  xl:min-h-[201px]
+  h-full
+  max-w-[1127px]
+  py-3
+  px-8
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/referrals/box-referrals-medium.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/referrals/box-referrals-medium.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+}
+/* . {
+  @apply
+bg-shark-400
+  h-[322.6px]
+  w-[275.5008px]
+  py-3
+  px-8
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/points-program/box.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/points-program/box.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+} */
+
+.box-fenix-goldies {
+  @apply
+  h-[322.6px]
+  w-[275.5008px]
+  p-5
+  xl:py-5
+  xl:px-5
+  z-[50]
+  mb-10
+  bg-shark-400
+  xl:bg-transparent
+  bg-opacity-40
+  max-xl:backdrop-blur-[15px]
+  rounded-lg
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/points-program/box.svg")]
+  before:bg-no-repeat
+  before:h-full
+  before:bg-cover
+  before:w-1/2
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/points-program/box.svg")]
+  after:bg-no-repeat
+  after:bg-right
+  after:h-full
+  after:bg-cover
+  after:w-1/2
+  after:top-0
+  after:right-0
+  after:hidden
+  after:xl:block;
+}
+
+.blast-gold-box {
+  @apply
+  w-[279px]
+  p-5
+  xl:py-5
+  xl:px-5
+  z-[50]
+  mb-10
+  rounded-lg
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/rewards-sidebar/blast-gold-box.svg")]
+  before:bg-no-repeat
+  before:h-full
+  before:bg-cover
+  before:w-1/2
+  before:top-0
+  before:left-0
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/rewards-sidebar/blast-gold-box.svg")]
+  after:bg-no-repeat
+  after:bg-right
+  after:h-full
+  after:bg-cover
+  after:w-1/2
+  after:top-0
+  after:right-0;
+}
+
+.blast-box {
+  @apply
+  w-[17.4375rem]
+  p-5
+  xl:py-5
+  xl:px-5
+  z-[50]
+  mb-10
+  rounded-lg
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/rewards-sidebar/blast-box.svg")]
+  before:bg-no-repeat
+  before:h-full
+  before:bg-cover
+  before:w-1/2
+  before:top-0
+  before:left-0
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/rewards-sidebar/blast-box.svg")]
+  after:bg-no-repeat
+  after:bg-right
+  after:h-full
+  after:bg-cover
+  after:w-1/2
+  after:top-0
+  after:right-0;
+}
+
+.fenix-rings-box {
+  @apply
+  w-[17.4375rem]
+  p-5
+  xl:py-5
+  xl:px-5
+  z-[50]
+  mb-10
+  rounded-lg
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/rewards-sidebar/fenix-ring-box.svg")]
+  before:bg-no-repeat
+  before:h-full
+  before:bg-cover
+  before:w-1/2
+  before:top-0
+  before:left-0
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/rewards-sidebar/fenix-ring-box.svg")]
+  after:bg-no-repeat
+  after:bg-right
+  after:h-full
+  after:bg-cover
+  after:w-1/2
+  after:top-0
+  after:right-0;
+}
+.ethereum-box {
+  @apply
+  h-[7.5625rem]
+  w-[16.875rem]
+  p-5
+  xl:py-5
+  xl:px-5
+  z-[50]
+  mb-10
+  rounded-lg
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/rewards-sidebar/ethereum-box.svg")]
+  before:bg-no-repeat
+  before:h-full
+  before:bg-cover
+  before:w-1/2
+  before:top-0
+  before:left-0
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/rewards-sidebar/ethereum-box.svg")]
+  after:bg-no-repeat
+  after:bg-right
+  after:h-full
+  after:bg-cover
+  after:w-1/2
+  after:top-0
+  after:right-0;
+}
+
+.box-referrals-minimum {
+
+   @apply relative
+  w-full
+  rounded-xl
+  flex-shrink-0
+  /* 2xl:w-[615px] */
+bg-shark-400
+  bg-opacity-40
+  xl:bg-transparent
+  xl:bg-opacity-100
+  max-h-[139px]
+  min-h-[139px]
+  xl:max-w-[529px]
+  py-3
+  md:px-8
+  px-4
+
+  before:content-[""]
+  before:absolute
+  before:bg-[url("/static/images/components/box/referrals/box-referrals-minimum.svg")]
+  before:bg-no-repeat
+  before:h-[50%]
+  before:bg-cover
+  before:w-full
+  before:top-0
+  before:left-0
+  before:hidden
+  before:xl:block
+
+  after:content-[""]
+  after:absolute
+  after:bg-[url("/static/images/components/box/referrals/box-referrals-minimum.svg")]
+  after:bg-no-repeat
+  after:bg-bottom
+  after:h-[50%]
+  after:bg-cover
+  after:w-full
+  after:bottom-0
+  after:left-0
+  after:hidden
+  after:xl:block;
+} 

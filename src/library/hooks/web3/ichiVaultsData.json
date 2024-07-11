@@ -1,0 +1,18 @@
+[
+  {
+    "id": "0xa18567009e9258169f454cdc7b869267345a31a3",
+    "tokenA": "0x4300000000000000000000000000000000000004",
+    "tokenB": "0xa12e4649fdddefd0fb390e4d4fb34ffbd2834fa6",
+    "allowTokenA": false,
+    "allowTokenB": true,
+    "apr": 16.45
+  },
+  {
+    "id": "0xd2e6aa0ceaf4edd6c6d6bc7b43458fd320f4a837",
+    "tokenA": "0x4300000000000000000000000000000000000004",
+    "tokenB": "0xa12e4649fdddefd0fb390e4d4fb34ffbd2834fa6",
+    "allowTokenA": true,
+    "allowTokenB": false,
+    "apr": 12.45
+  }
+]
